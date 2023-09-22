@@ -1,0 +1,567 @@
+/**
+ * @name The Morbidium Fantasy
+ * @author MorbidMeta
+ * @authorId 366436594162597889
+ * @authorLink https://hyperfollow.com/MorbidMeta
+ * @version 3.2.1
+ * @description The bliss of a fantasy world with the essence of the night...
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+  --gap-size: 1em;
+
+  --b-radius: 14px;
+  --b-width: 3px;
+
+  --bg-opacity: 0.6; /* (from 0 - 1) */
+
+  --squeeze-in: 10%;
+  --glass: rgba(0, 0, 0, var(--bg-opacity)) var(--squeeze-in);
+
+  --accent-1: 57, 111, 142;
+  --accent-2: 103, 168, 187;
+
+  --accent-linear: linear-gradient(135deg, rgb(var(--accent-1)), rgb(var(--accent-2)));
+
+  --bg: url("https://github.com/demonetizeddark/wallpaperrepository/blob/main/lb-1.jpg?raw=true");
+}
+
+
+@keyframes backdrop-in {
+  from {background-size: 150%;}
+  to {background-size: 100%;}
+}
+
+.appMount-2yBXZl, body {
+  background-image: var(--bg) !important;
+  background-size: cover;
+  background-position: center;
+}
+.app-2CXKsg {
+  background: none
+}
+.bg-1QIAus {
+  background: none;
+}
+
+.appAsidePanelWrapper-ev4hlp {
+  padding: var(--gap-size);
+  padding-top: calc(var(--gap-size) * 2);
+}
+
+/* Add background to loading screen */
+.container-2RRFHK {
+  background-image: var(--bg) !important;
+  background-size: cover;
+  background-position: center;
+  background-color: transparent;
+}
+
+/* TypeMAC: */
+.typeMacOS-3V4xXE {
+  margin: var(--gap-size);
+}
+
+/* Servers */
+.platform-osx .wrapper-1_HaEi {
+  margin-top: 0;
+  padding-top: 1em;
+  border-radius: var(--b-radius) 0 0 var(--b-radius);
+  border: var(--b-width) solid #000;
+  background: var(--glass);
+}
+.wrapper-1_HaEi {
+  margin-top: 0;
+  border-radius: var(--b-radius) 0 0 var(--b-radius);
+  border: var(--b-width) solid #000;
+  background: var(--glass);
+}
+.theme-dark .scroller-3X7KbA {
+  background: none
+}
+.iconBadge-32fMme {
+  background-color: rgb(var(--accent-1)) !important;
+}
+.listItem-3SmSlK > .pill-2RsI5Q > .item-2LIpTv {
+  transition: background 200ms ease;
+}
+.listItem-3SmSlK:hover > .pill-2RsI5Q > .item-2LIpTv{
+  background: rgb(var(--accent-1));
+}
+/* Server Folders */
+.folder-241Joy {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 0 2px rgb(var(--accent-1)), inset 0 0 5px 2px rgb(var(--accent-2));
+  border-radius: 16px;
+}
+.folder-241Joy.hover-3m7-WT {
+  background: rgba(var(--accent-2),1);
+}
+.expandedFolderBackground-1kSAf6 {
+  background: rgba(0,0,0,0.5)
+}
+.expandedFolderIconWrapper-3RwQpD {
+  filter: drop-shadow(0 2px 1px #000);
+}
+
+/* Channels */
+.container-1-ERn5 {
+  margin-bottom: var(--gap-size);
+}
+.container-1NXEtd {
+  background: none !important;
+  margin-bottom: var(--gap-size);
+}
+.sidebar-1tnWFu {
+  background: none;
+  margin: 0 var(--gap-size);
+}
+.scroller-1ox3I2 {
+  background: var(--glass);
+  border: var(--b-width) solid #000;
+}
+.modeSelected-3DmyhH .content-1gYQeQ /* Selected Channel */  {
+  background: var(--accent-linear);
+}
+.content-1gYQeQ, .content-1gYQeQ:hover > a > .channelName-3KPsGw {
+  transition: 100ms ease;
+}
+
+
+/* User & Voice Panels */
+.panels-3wFtMD {
+  background: var(--glass);
+  border: var(--b-width) solid #000
+}
+.theme-dark .container-YkUktl {
+  background: none
+}
+.container-1zzFcN {
+  background: none
+}
+/* Panel Buttons */
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX {
+  background: rgb(0,0,0,0);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  text-align: center;
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.button-1EGGcP.buttonColor-3bP3fX:hover, .button-1EGGcP .buttonColor-3bP3fX:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  text-align: center;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+
+/* Main Container */
+.chat-2ZfjoI {
+  background-color: transparent;
+}
+.title-31SJ6t {
+  margin-bottom: var(--gap-size);
+}
+.content-1jQy2l:before {
+  box-shadow: none;
+}
+
+/*If LOADING*/
+.wrapper-3HVHpV, .wrapper-15CKyy {
+  background: none
+}
+
+/* Tooltips */
+.tooltipPrimary-2466a2 {
+  background: linear-gradient(135deg, rgb(var(--accent-1)) 10%, rgb(var(--accent-2)));
+}
+.theme-dark .tooltipPrimary-2466a2 .tooltipPointer-sMBQqe, .theme-light .tooltipPrimary-2466a2 .tooltipPointer-sMBQqe {
+  border-top-color: rgb(var(--accent-1));
+}
+.moreUsers-_v6T-L {
+  background: rgb(var(--accent-1))
+}
+
+/* Autocomplete */
+.theme-dark .autocomplete-3NRXG8 {
+  background: var(--glass);
+  box-shadow: none;
+}
+.autocompleteAttached-bt_md- {
+  bottom: calc(100% + 0px);
+}
+.scroller-2MALzE::before {
+  content: "";
+  background: var(--glass);
+  position: sticky;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+}
+
+/* Chat Window */
+.chatContent-3KubbW {
+  background: var(--glass);
+  border: var(--b-width) solid #000;
+}
+.chatContent-3KubbW:only-child /* Adjust for User Panel */ {
+  border-radius: 0 0 var(--b-radius) 0;
+}
+.theme-dark .form-3gdLxP:before {
+  background: linear-gradient(180deg,rgba(54,57,63,0) 0, #000)
+}
+
+/* Message Buttons */
+.wrapper-2vIMkT {
+  background: var(--accent-linear);
+}
+.button-3bklZh {
+  transition: background 200ms ease;
+}
+.button-3bklZh:hover {
+  background:rgba(0, 0, 0, 0.2)
+}
+/* Context Menus */
+.menu-2TXYjN {
+  background: var(--accent-linear)
+}
+/* Context Menu Items */
+.item-5ApiZt {
+  transition: 200ms ease;
+}
+.customItem-1KYL7t:hover > .button-1zW0-r {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+.button-1zW0-r {
+  background: rgb(0,0,0,0.2);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.colorDefault-2_rLdz.focused-3LIdPu {
+  background:rgba(0, 0, 0, 0.2)
+}
+.colorDanger-3umuSx.focused-3LIdPu {
+  background: rgba(250, 128, 114,1);
+  box-shadow: inset 0 0 5px 2px rgb(71, 36, 32);
+  text-shadow: 0 2.5px 3px #000;
+  border: 1px solid salmon;
+  color: #fff;
+}
+
+/* Channel Header */
+.theme-dark .themed-Hp1KC_ {
+  border-radius: 0 var(--b-radius) 0 0;
+  border: var(--b-width) solid #000;
+  background: var(--glass)
+}
+
+/* Member List */
+.container-2o3qEW {
+  margin-left: var(--gap-size);
+  border-radius: 0 0 var(--b-radius) 0;
+  background: var(--glass);
+  border: var(--b-width) solid #000;
+  height: auto;
+}
+.member-48YF_l, .members-3WRCEx {
+  background-color: transparent;
+}
+
+/* mentioned */
+.mentioned-Tre-dv:before {
+  background: rgb(var(--accent-1))
+}
+.mentioned-Tre-dv {
+  background: linear-gradient(to right, rgba(var(--accent-1), 0.3), rgba(var(--accent-2), 0.2));
+}
+.message-2CShn3.mentioned-Tre-dv.selected-2LX7Jy, .mouse-mode.full-motion .mentioned-Tre-dv:hover {
+  background: linear-gradient(to right, rgba(var(--accent-1), 0.5), rgba(var(--accent-2), 0.4))
+}
+
+/* unread/"NEW" icons */
+.mention-3XBnnZ {
+  background: linear-gradient(to right, rgb(var(--accent-1)), rgb(var(--accent-2)))
+}
+.numberBadge-37OJ3S {
+  background: linear-gradient(45deg, rgb(var(--accent-1)), rgb(var(--accent-2)))
+}
+
+.channelTextArea-1FufC0 {
+  background: var(--glass)
+}
+.scrollableContainer-15eg7h {
+  background: none
+}
+
+/* ——————————————— User Settings ———————————————— */
+
+
+/* Remove Overall Background*/
+.layer-86YKbF, .standardSidebarView-E9Pc3j {
+  background: none;
+}
+
+/* Tag :) */
+.sidebar-nqHbhN {
+  padding: 10px 6px 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  font-size: 1.5em;
+}
+.sidebar-nqHbhN::after {
+  content: "MorbidMeta";
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 0 10px;
+  background: linear-gradient(to top, rgb(var(--accent-1)), rgb(var(--accent-2)));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Left Sidebar */
+.sidebarRegion-1VBisG {
+  border-radius: var(--b-radius) 0 0 var(--b-radius);
+  border: var(--b-width) solid #000;
+  overflow: hidden;
+}
+.sidebarRegionScroller-FXiQOh {
+  background: var(--glass);
+}
+
+/* Right Container */
+.contentRegion-3HkfJJ {
+  background: none;
+  margin-left: var(--gap-size);
+  border: var(--b-width) solid #000;
+  border-radius: 0 var(--b-radius) var(--b-radius) 0;
+} 
+.contentRegionScroller-2_GT_N {
+  background: var(--glass)
+}
+
+/* —————————————— Direct Messages ——————————————— */
+
+
+/* "Friends" Page */
+.container-2cd8Mz {
+  background: none
+}
+.tabBody-2dgbAs {
+  margin-top: var(--gap-size);
+}
+.tabBody-2dgbAs:before {
+  box-shadow: none;
+}
+/* Friends List */
+.peopleColumn-1wMU14 {
+  background: var(--glass)
+}
+/* Direct Messages Column */
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {
+  background: rgb(0,0,0,0);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  text-align: center;
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.searchBar-3TnChZ .searchBarComponent-3N7dCG:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  text-align: center;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+.privateChannels-oVe7HL {
+  background: var(--glass);
+  margin-bottom: var(--gap-size);
+  border: var(--b-width) solid #000;
+}
+.theme-dark .scroller-WSmht3 {
+  background: none;
+}
+.selected-26oxtA {
+  background: linear-gradient(135deg, rgba(var(--accent-1), 1), rgba(var(--accent-2), 1));
+}
+/* Active Now */
+.header-Imy05m {
+  text-align: center;
+}
+.header-Imy05m::after {
+  content: "";
+  display: flex;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(var(--accent-1), 0), rgba(var(--accent-2), 1), rgba(var(--accent-1), 0));
+}
+.nowPlayingColumn-1eCBCN {
+  background: var(--glass);
+  border: var(--b-width) solid #000;
+  margin-left: var(--gap-size);
+}
+.wrapper-2RrXDg {
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover {
+  background-color: transparent;
+}
+.wrapper-2RrXDg:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+.scroller-hE2gWq {
+  border: 0;
+  margin: 0;
+}
+.container-1oAagU {
+  background: none;
+}
+/* Profile Panel */
+.profilePanel-2PWEok {
+  background: var(--glass);
+  margin-left: var(--gap-size);
+  border-radius: 0 0 var(--b-radius) 0;
+  border: var(--b-width) solid #000;
+}
+.userPanelInnerThemed-2xZFjl, .userProfileOuterUnthemed-2b2rsv {
+  background: none
+}
+/* User Profile */
+.userProfileInnerThemedNonPremium-1gT-zY {
+  background: var(--accent-linear);
+}
+.overlayBackground-1KgwVi {
+  background: none
+}
+.userTagNoNickname-2MJ9HD {
+  text-align: center;
+}
+.title-1r9MQ6 {
+  justify-content: center;
+}
+.divider-1tWBgZ {
+  background: linear-gradient(to right, rgba(var(--accent-1), 0), rgba(var(--accent-2), 1), rgba(var(--accent-1), 0));
+  height: 2px;
+}
+.userPopoutOverlayBackground-dKOOda {
+  margin: 0;
+}
+
+/* "playing a game" redesign */
+.activity-E0U09Y, 
+.assetsLargeImageStreamPreview-3peV91, 
+.assetsLargeImageStreamPreviewXbox-2pmV5G, 
+.assetsLargeImageUserPopout-pY2WJv, 
+.assetsLargeImageUserPopoutV2-9ksyvz, 
+.assetsLargeImageUserPopoutV2Xbox-e2lWUu, 
+.assetsLargeImageUserPopoutXbox-tkbJgJ {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Modals */
+.backdrop-2ByYRN {
+  background: linear-gradient(135deg, rgba(var(--accent-1), 1), rgba(0,0,0,1) 25%, rgba(0,0,0,1) 75%, rgba(var(--accent-2), 1)) !important;
+  animation: backdrop-in 300ms ease 1 forwards normal;
+}
+.root-1CAIjD {
+  background: rgba(0, 0, 0, 0.8);
+}
+.footer-IubaaS {
+  background: none
+}
+/* Events */
+.header-1sd0RU {
+  background: none;
+}
+.card-8UsK4b {
+  background: rgb(0,0,0,0);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.card-8UsK4b:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  color: #fff;
+}
+.contentContainer-BWAau5 {
+  background: none;
+}
+.lookOutlined-3RTC7c.colorPrimary-2-Lusz {
+  background: rgb(0,0,0,0.5);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.lookOutlined-3RTC7c.colorPrimary-2-Lusz:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  text-align: center;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+
+/* BD Error Modal */
+.lookFilled-1H2Jvj.colorBrand-2M3O3N, .bd-tab-item.selected {
+  background: rgb(0,0,0,0);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  text-align: center;
+  border: 1px solid #333;
+  transition: all 200ms ease;
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover, .bd-tab-item.selected:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  text-align: center;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+.bd-addon-error {
+  background: rgb(0,0,0,0);
+  box-shadow: inset 0 0 5px 0px rgb(var(--accent-2));
+  border: 1px solid #333;
+  height: 88px;
+  transition: all 200ms ease;
+  overflow: hidden;
+}
+.bd-addon-error:hover {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+}
+.bd-addon-error.expanded:not(code) {
+  background: rgba(var(--accent-1),1);
+  box-shadow: inset 0 0 5px 2px rgb(var(--accent-2));
+  text-shadow: 0 2.5px 3px #000;
+  border: 1px solid rgb(var(--accent-1));
+  color: #fff;
+  height: 500px;
+}
+.bd-addon-error-stack code {
+  background: #000
+}
+
+.theme-dark .hljs-title, .theme-dark .hljs-title.class_, .theme-dark .hljs-title.class_.inherited__, .theme-dark .hljs-title.function_ {
+  color: salmon
+}
