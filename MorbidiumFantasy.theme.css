@@ -17,7 +17,10 @@
   --accent-linear: linear-gradient(135deg, rgb(var(--accent-1)), rgb(var(--accent-2)));
 
   --bg: url("https://github.com/demonetizeddark/wallpaperrepository/blob/main/lb-1.jpg?raw=true");
-  --the-hex: url("https://raw.githubusercontent.com/demonetizeddark/wallpaperrepository/main/MM_hex.svg")
+  --the-hex: url("https://raw.githubusercontent.com/demonetizeddark/wallpaperrepository/main/MM_hex.svg");
+
+  /* Global Discord VARIABLE RESET */
+  --text-link: rgb(var(--accent-2));
 }
 
 
@@ -49,6 +52,7 @@ body, .appMount_fae9dd {
 }
 .childWrapper__01b9c {
     background: var(--the-hex) center/60% no-repeat;
+    background-color: rgb(var(--accent-2)) !important;
     min-width: 60px;
     min-height: 60px;
 }
@@ -121,7 +125,7 @@ body, .appMount_fae9dd {
 }
 .circleIconButton_d8df29.selected__5250e {
   color: var(--white-500);
-  background: var(--accent-linear);
+  background: rgb(var(--accent-2)) !important;
 }
 
 /* Channels */
@@ -277,6 +281,34 @@ body, .appMount_fae9dd {
   border: 1px solid salmon;
   color: #fff;
 }
+
+/* // EMBEDS AND EXTRA CHAT SHIT ################################################### */
+.theme-dark .wrapperAudio__555ce {
+  background: var(--glass);
+  border: var(--b-width) solid #000;
+}
+.mediaBarInteraction__0633c:hover .mediaBarGrabber_c64ff9 /*progress dot*/{
+  background-color: rgb(var(--accent-1));
+}
+.mediaBarProgress__29db2 {
+  background: var(--accent-linear);
+}
+/*pseudos*/
+.mediaBarProgress__29db2:before {background-color: rgb(var(--accent-1));}
+.mediaBarProgress__29db2:after {background-color: rgb(var(--accent-2))}
+
+.mediaBarWrapper_f312bd {
+  background-color: rgb(12, 12, 12);
+}
+.buffer_e14781 /* buffer line */{
+  background-color: rgb(var(--accent-2))
+}
+
+/*media bar pseudos for cleanup*/
+.mediaBarWrapper_f312bd:before, .mediaBarWrapper_f312bd:after {
+  background-color: rgb(12,12,12);
+}
+/* // EMBEDS AND EXTRA CHAT SHIT ################################################### */
 
 /* Channel Header */
 .theme-dark .themed_b152d4 {
@@ -434,7 +466,7 @@ body, .appMount_fae9dd {
 .theme-dark .scroller__4b984 {
   background: none;
 }
-.selected-26oxtA {
+.selected_d94cf9 {
   background: linear-gradient(135deg, rgba(var(--accent-1), 1), rgba(var(--accent-2), 1));
 }
 /* Active Now */
