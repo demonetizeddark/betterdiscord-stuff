@@ -114,6 +114,15 @@ body, .appMount_fae9dd {
 .expandedFolderIconWrapper__458cf {
   filter: drop-shadow(0 2px 1px #000);
 }
+/* Add & Discover server buttons */
+.circleIconButton_d8df29 {
+  color: rgb(var(--accent-2));
+  background: var(--glass) !important;
+}
+.circleIconButton_d8df29.selected__5250e {
+  color: var(--white-500);
+  background-color: var(--accent-linear);
+}
 
 /* Channels */
 .clickable__2d589 {
@@ -131,7 +140,7 @@ body, .appMount_fae9dd {
   background: var(--glass);
   border: var(--b-width) solid #000;
 }
-.modeSelected-3DmyhH .link-1_kTxV /* Selected Channel */  {
+.modeSelected__487d6 .link__95dc0 /* Selected Channel */  {
   background: var(--accent-linear);
 }
 .content-1gYQeQ, .content-1gYQeQ:hover > a > .channelName-3KPsGw {
@@ -286,6 +295,11 @@ body, .appMount_fae9dd {
 }
 .member_b44d5d, .members__9f47b {
   background-color: transparent;
+}
+
+/* BOT icons */
+.botTagRegular_c89c9a {
+  background: var(--accent-linear);
 }
 
 /* mentioned */
