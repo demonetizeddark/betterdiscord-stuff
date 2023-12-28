@@ -397,13 +397,13 @@ body, .appMount_fae9dd {
 
 
 /* "Friends" Page */
-.container-2cd8Mz {
+.container__5c7e7 {
   background: none
 }
-.tabBody-2dgbAs {
+.tabBody_b3d268 {
   margin-top: var(--gap-size);
 }
-.tabBody-2dgbAs:before {
+.tabBody_b3d268:before {
   box-shadow: none;
 }
 /* Friends List */
@@ -448,7 +448,7 @@ body, .appMount_fae9dd {
   width: 100%;
   background: linear-gradient(to right, rgba(var(--accent-1), 0), rgba(var(--accent-2), 1), rgba(var(--accent-1), 0));
 }
-.nowPlayingColumn-1eCBCN {
+.nowPlayingColumn_f5023f {
   background: var(--glass);
   border: var(--b-width) solid #000;
   margin-left: var(--gap-size);
@@ -468,11 +468,11 @@ body, .appMount_fae9dd {
   border: 1px solid rgb(var(--accent-1));
   color: #fff;
 }
-.scroller-hE2gWq {
+.scroller__00e7e {
   border: 0;
   margin: 0;
 }
-.container-1oAagU {
+.container__0a6a9 {
   background: none;
 }
 /* Profile Panel */
