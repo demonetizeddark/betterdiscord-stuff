@@ -1,3 +1,12 @@
+/**
+ * @name The Morbidium Fantasy
+ * @author MorbidMeta
+ * @authorId 366436594162597889
+ * @authorLink https://hyperfollow.com/MorbidMeta
+ * @version 3.2.1
+ * @description The bliss of a fantasy world with the essence of the night...
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 :root {
@@ -29,6 +38,11 @@
   to {background-size: 100%;}
 }
 
+@keyframes ping {
+  0% {filter: brightness(3) drop-shadow(0 0 10px #fff);}
+  75%, 100% {filter: brightness(1);}
+}
+
 body, .appMount_fae9dd {
   background: var(--bg) !important;
   background-size: cover !important;
@@ -52,9 +66,12 @@ body, .appMount_fae9dd {
 }
 .childWrapper__01b9c {
     background: var(--the-hex) center/60% no-repeat;
-    background-color: rgb(var(--accent-2)) !important;
     min-width: 60px;
     min-height: 60px;
+}
+
+.wrapper_d281dd:hover .childWrapper__01b9c, .wrapper_d281dd.selected_f5ec8e .childWrapper__01b9c {
+  background-color: rgb(var(--accent-2));
 }
 
 /* Add background to loading screen */
@@ -126,6 +143,11 @@ body, .appMount_fae9dd {
 .circleIconButton_d8df29.selected__5250e {
   color: var(--white-500);
   background: rgb(var(--accent-2)) !important;
+}
+
+/* GOT A PING ⁉️⁉️ */
+.lowerBadge__669e7 {
+  animation: ping 469ms cubic-bezier(0,0,.2,1) infinite;
 }
 
 /* Channels */
@@ -469,7 +491,11 @@ body, .appMount_fae9dd {
 .selected_d94cf9 {
   background: linear-gradient(135deg, rgba(var(--accent-1), 1), rgba(var(--accent-2), 1));
 }
+
 /* Active Now */
+.inset__0bfb3, .section_efc22d {
+  background-color: transparent !important;
+}
 .header-Imy05m {
   text-align: center;
 }
@@ -485,7 +511,7 @@ body, .appMount_fae9dd {
   border: var(--b-width) solid #000;
   margin-left: var(--gap-size);
 }
-.wrapper-2RrXDg {
+.wrapper__6e669 {
   background: rgba(0,0,0,0.5);
   border: 1px solid #333;
   transition: all 200ms ease;
