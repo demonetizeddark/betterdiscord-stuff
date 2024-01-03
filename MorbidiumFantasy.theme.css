@@ -43,6 +43,27 @@
   75%, 100% {filter: brightness(1);}
 }
 
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
+}
+
 body, .appMount_fae9dd {
   background: var(--bg) !important;
   background-size: cover !important;
@@ -544,36 +565,33 @@ body, .appMount_fae9dd {
   background: none
 }
 /* User Profile */
-.userProfileInnerThemedNonPremium-1gT-zY {
-  background: var(--accent-linear);
+.userPanelInnerThemed__1804b {
+  --profile-gradient-overlay-color: hsla(0,0%,0%,0.2);
+  background: linear-gradient(135deg, var(--profile-gradient-primary-color),var(--profile-gradient-secondary-color));
+  background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
-.overlayBackground-1KgwVi {
-  background: none
-}
-.userTagNoNickname-2MJ9HD {
-  text-align: center;
-}
-.title-1r9MQ6 {
+.container__22d2b /* user and display name */ {
   justify-content: center;
 }
-.divider-1tWBgZ {
-  background: linear-gradient(to right, rgba(var(--accent-1), 0), rgba(var(--accent-2), 1), rgba(var(--accent-1), 0));
-  height: 2px;
-}
-.userPopoutOverlayBackground-dKOOda {
-  margin: 0;
-}
+.nickname__3d1d7 /* display name */ {
+  background: linear-gradient(to right, var(--profile-gradient-primary-color) 20%,var(--profile-gradient-secondary-color), var(--profile-gradient-primary-color) 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 1s linear infinite forwards;
 
-/* "playing a game" redesign */
-.activity-E0U09Y, 
-.assetsLargeImageStreamPreview-3peV91, 
-.assetsLargeImageStreamPreviewXbox-2pmV5G, 
-.assetsLargeImageUserPopout-pY2WJv, 
-.assetsLargeImageUserPopoutV2-9ksyvz, 
-.assetsLargeImageUserPopoutV2Xbox-e2lWUu, 
-.assetsLargeImageUserPopoutXbox-tkbJgJ {
-  border-radius: 8px;
-  overflow: hidden;
+    text-align: center;
+}
+.info__40462 /* user name */ {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.customStatus__3aa7f {
+  text-align: center;
 }
 
 /* Modals */
