@@ -85,7 +85,7 @@ body, .appMount_fae9dd {
 .childWrapper__01b9c > svg > path {
     fill: transparent
 }
-.childWrapper__01b9c {
+.childWrapper__01b9c:not(.button_Jt-tIg) {
     background: var(--the-hex) center/60% no-repeat;
     min-width: 60px;
     min-height: 60px;
@@ -172,8 +172,10 @@ body, .appMount_fae9dd {
 }
 
 /* Channels */
-.clickable__2d589 {
+.clickable__2d589 /* Header */{
   margin-bottom: var(--gap-size);
+  border: var(--b-width) solid #000;
+  background: var(--glass);
 }
 .container__590e2 {
   background: none !important;
@@ -638,6 +640,11 @@ body, .appMount_fae9dd {
   border: 1px solid rgb(var(--accent-1));
   color: #fff;
 }
+
+
+
+
+/* -- BETTERDISCORD -- */
 
 /* BD Error Modal */
 .lookFilled__19298.colorBrand_b2253e, .bd-tab-item.selected {
