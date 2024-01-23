@@ -28,6 +28,8 @@
   --bg: url("https://github.com/demonetizeddark/wallpaperrepository/blob/main/lb-1.jpg?raw=true");
   --the-hex: url("https://raw.githubusercontent.com/demonetizeddark/wallpaperrepository/main/MM_hex.svg");
 
+  --dyk-text: "just made a new character, what the FUCK should I name it?";
+
   /* Global Discord VARIABLE RESET */
   --text-link: rgb(var(--accent-2));
 }
@@ -108,6 +110,18 @@ body, .appMount_fae9dd {
 }
 .container__4bde3 video.ready__61f2f {
     mix-blend-mode: overlay
+}
+
+/* loading screen custom font */
+.tip__6e299 {
+  font-size: 0%;
+}
+.tip__6e299::after{
+  content: var(--dyk-text);
+  color: var(--text-normal);
+  font-size: 16px;
+  max-width: 300px;
+  line-height: 20px;
 }
 
 /* TypeMAC: */
