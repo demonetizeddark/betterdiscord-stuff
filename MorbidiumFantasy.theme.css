@@ -83,6 +83,18 @@ body, .appMount_fae9dd {
   padding-top: calc(var(--gap-size) * 2);
 }
 
+/* AUTH BOX CUH */
+.characterBackground__2820f .artwork__8fc92 {
+  display: none;
+}
+
+
+.authBox__7196a[data-theme=dark] {
+  background: var(--glass);
+  border: #000 solid var(--b-width);
+  backdrop-filter: blur(5px);
+}
+
 /* Custom Home Icon */
 .childWrapper__01b9c > svg > path {
     fill: transparent
