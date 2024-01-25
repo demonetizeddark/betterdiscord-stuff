@@ -32,6 +32,7 @@
 
   /* Global Discord VARIABLE RESET */
   --text-link: rgb(var(--accent-2));
+  --os-accent-color: rgb(var(--accent-1));
 }
 
 
@@ -749,4 +750,32 @@ body, .appMount_fae9dd {
 }
 .bd-addon-list .bd-addon-header {
   background: var(--glass)
+}
+
+
+
+
+/* -- VENCORD -- */
+
+/* Universal Changes */
+
+.checked__6bdb0 {
+  background: var(--accent-linear);
+}
+
+/* General Settings */
+.vc-settings-card.vc-settings-donate > div {
+  height: 128px;
+}
+.vc-settings-card.vc-settings-donate > img {
+  display: none;
+}
+.vc-settings-card.vc-settings-donate::after {
+  --gif:url('https://github.com/demonetizeddark/wallpaperrepository/blob/main/a_e2b69aabc7b7ba15d440f3f29c865d49.gif?raw=true');
+  content: "";
+  background: var(--gif) center/100% no-repeat;
+  mask-image: var(--the-hex);
+  margin-left: auto;
+  height: 128px;
+  width: 128px;
 }
