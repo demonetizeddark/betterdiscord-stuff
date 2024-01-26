@@ -142,6 +142,14 @@ body, .appMount_fae9dd {
   margin: var(--gap-size);
 }
 
+/* Notice */
+.notice__5fd4c {
+  background-color: rgba(89, 54, 149, var(--bg-opacity));
+  border-radius: var(--b-radius);
+  margin-bottom: var(--gap-size);
+  margin-left: var(--gap-size);
+}
+
 /* Pill Selection */
 .topPill__0cdf1 .themed_b957e8.item__48dda:hover:not(.disabled__85bca), .side_b4b3f6 .themed_b957e8.item__48dda:hover:not(.disabled__85bca) {
   transition: all 50ms ease;
@@ -750,6 +758,15 @@ body, .appMount_fae9dd {
 }
 .bd-addon-list .bd-addon-header {
   background: var(--glass)
+}
+
+/* Notice */
+.noticeWrapper_8z511t {
+  margin-bottom: var(--gap-size);
+  border-radius: var(--b-radius) !important;
+}
+.colorInfo__5187f {
+  background: rgba(74, 144, 226, var(--bg-opacity));
 }
 
 
