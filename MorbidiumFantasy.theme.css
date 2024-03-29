@@ -67,12 +67,12 @@
   }
 }
 
-body, .appMount_fae9dd {
+body, .appMount_c99875 {
   background: var(--bg) !important;
   background-size: cover !important;
   background-position: center;
 }
-.app__00c92, .app_de4237 {
+.app_b1f720, .app_de4237 {
   background: none
 }
 .bg__12180 {
@@ -97,10 +97,10 @@ body, .appMount_fae9dd {
 }
 
 /* Custom Home Icon */
-.childWrapper__01b9c > svg > path {
+.childWrapper_a6ce15 > svg > path {
     fill: transparent
 }
-.childWrapper__01b9c:not(.button_Jt-tIg) {
+.childWrapper_a6ce15:not(.button_Jt-tIg) {
     background: var(--the-hex) center/60% no-repeat;
     min-width: 60px;
     min-height: 60px;
