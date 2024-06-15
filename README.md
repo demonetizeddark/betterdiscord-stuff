@@ -1,1 +1,1 @@
-# Just a repository for anything I make for BetterDiscord.
+# Just a repository for anything I make for BetterDiscord/Vencord.
